@@ -12,3 +12,5 @@ rescue Bundler::GemNotFound => e
   exit!
 end if File.exist?(gemfile)
 
+require 'dotenv'
+Dotenv.load
